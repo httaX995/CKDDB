@@ -194,7 +194,7 @@ cmd({
 });
 
 
-
+/*
 
 
 
@@ -239,7 +239,7 @@ cmd({
         reply("An error occurred while processing your message. Please try again later.");
     }
 });
-
+*/
 
 //   ======================== song Video =========================
 
