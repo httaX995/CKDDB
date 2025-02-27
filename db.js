@@ -197,6 +197,50 @@ cmd({
 
 
 
+
+const dr = [
+    "දිදුල", "Didula", "Didu", "Rashmika", "දිදු"
+];
+
+cmd({
+    on: "body"
+}, async (conn, mek, m, { from, body, isGroup, isAdmins, isBotAdmins, reply, sender }) => {
+    try {
+        if (!body) return; // Check if body exists
+        
+        const lowerCaseMessage = body.toLowerCase();
+        const containsBadWord = dr.some(word => 
+            lowerCaseMessage.includes(word.toLowerCase())
+        );
+
+        if (containsBadWord) {
+            await conn.sendMessage(from, { 
+                audio: { 
+                    url: 'https://files.catbox.moe/809bz6.mp3' 
+                }, 
+                mimetype: "audio/mpeg",
+                ptt: true,
+                contextInfo: {
+                    externalAdReply: {
+                        title: "Didula MD V2",
+                        body: "Created By Didula Rashmika",
+                        thumbnailUrl: "https://files.catbox.moe/za6ytm.jpg",
+                        sourceUrl: "https://whatsapp.com/channel/0029VaqqF4GDTkJwKruLSK2f",
+                        mediaType: 1,
+                        renderLargerThumbnail: true
+                    }
+                }
+            }, { 
+                quoted: mek 
+            });
+        }
+    } catch (error) {
+        console.error("Error processing message:", error);
+        reply("An error occurred while processing your message. Please try again later.");
+    }
+});
+
+
 //   ======================== song Video =========================
 
 cmd({
