@@ -186,18 +186,21 @@ async (conn, mek, m, { from, q, reply }) => {
             }
 
             const movie = movieDetails.result;
-            let movieMessage = `🍟 *${movie.title}*\n\n`;
-            movieMessage += `*📅 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 𝖣𝖺𝗍𝖾:* ${movie.release_date}\n`;
-            movieMessage += `*🗺 𝖢𝗈𝗎𝗇𝗍𝗋𝗒:* ${movie.country}\n`;
-            movieMessage += `*⏰ 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇:* ${movie.duration}\n`;
+            let movieMessage = `🍟 *_${movie.title}_*\n\n`;
+            movieMessage += `*📅𝖱𝖾𝗅𝖾𝖺𝗌𝖾 𝖣𝖺𝗍𝖾* ➠ ${movie.release_date}\n`;
+            movieMessage += `*🗺𝖢𝗈𝗎𝗇𝗍𝗋𝗒* ➠ ${movie.country}\n`;
+            movieMessage += `*⏰𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇* ➠ ${movie.duration}\n`;
 
             // Handling genres properly
             const genres = Array.isArray(movie.genres) ? movie.genres.join(', ') : movie.genres;
-            movieMessage += `*🎭 𝖦𝖾𝗇𝖾𝗋𝖾𝗌:* ${genres}\n`;
+            movieMessage += `*🎭𝖦𝖾𝗇𝖾𝗋𝖾𝗌* ➠ ${genres}\n`;
 
-            movieMessage += `*⭐ 𝖨𝗆𝖽𝖻 𝖱𝖺𝗍𝗂𝗇𝗀:* ${movie.IMDb_Rating}\n`;
-            movieMessage += `*🎬 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋:* ${movie.director.name}\n\n`;
-            movieMessage += `> 👨🏻‍💻 *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ* `;
+            movieMessage += `*⭐𝖨𝗆𝖽𝖻 𝖱𝖺𝗍𝗂𝗇𝗀* ➠ ${movie.IMDb_Rating}\n`;
+            movieMessage += `*🎬𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋* ➠ ${movie.director.name}\n\n`;
+            movieMessage += `> *© _SinhalaSub.lk_*\n`;
+            movieMessage += `> *මෙම file එක දින 14ක් තුල exprie වේ. ඊට පෙර download කරගන්න.\n\n`;
+            movieMessage += `> 👨🏻‍💻 *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ*\n`;
+            movieMessage += `> ⚡ᴘᴏᴡᴇʀᴇᴅ ʙʏ *CK CineMAX*`;
 
             const imageUrl = movie.images && movie.images.length > 0 ? movie.images[0] : null;
 
