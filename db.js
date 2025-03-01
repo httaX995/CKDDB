@@ -186,7 +186,7 @@ async (conn, mek, m, { from, q, reply }) => {
             }
 
             const movie = movieDetails.result;
-            let movieMessage = `*${movie.title}*\n\n`;
+            let movieMessage = `🍟 *${movie.title}*\n\n`;
             movieMessage += `*📅 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 𝖣𝖺𝗍𝖾:* ${movie.release_date}\n`;
             movieMessage += `*🗺 𝖢𝗈𝗎𝗇𝗍𝗋𝗒:* ${movie.country}\n`;
             movieMessage += `*⏰ 𝖣𝗎𝗋𝖺𝗍𝗂𝗈𝗇:* ${movie.duration}\n`;
