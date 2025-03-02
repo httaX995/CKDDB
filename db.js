@@ -83,7 +83,7 @@ const qtoko = {
   },
   'message': {
     'extendedTextMessage': {
-      'text': "𝐃𝐢𝐝𝐮𝐥𝐚 𝐌𝐃 𝐕𝟐 🍃"
+      'text': "𝗖𝗛𝗘𝗧𝗛𝗠𝗜𝗡𝗔 ⚡"
     }
   }
 };
