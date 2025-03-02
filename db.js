@@ -83,7 +83,7 @@ const qtoko = {
   },
   'message': {
     'extendedTextMessage': {
-      'text': "𝗖𝗛𝗘𝗧𝗛𝗠𝗜𝗡𝗔 ⚡"
+      'text': "ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ ⚡"
     }
   }
 };
@@ -351,7 +351,7 @@ async (conn, mek, m, {
             from,
             {
                 document: { url: q },
-                caption: "> *🍧 720P - WEBRip*\n\n> 👨🏻‍💻 *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ*",
+                caption: "> *🍧 720P - WEBRip*\n> *⚡ ᴄᴋ ᴄɪɴᴇᴍᴀx*",
                 mimetype: mime,
                 fileName: fileName
             },
